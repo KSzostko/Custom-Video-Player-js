@@ -14,4 +14,22 @@ body {
     align-items: center;
 }
 
-.player {}
+.player {
+    position: relative;
+}
+
+.player__controls {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background: transparent;
+}
+
+.player__play {
+    background: transparent;
+    border-style: none;
+    color: #fff;
+    font-size: 16px;
+}
