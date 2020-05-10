@@ -33,3 +33,62 @@ body {
     color: #fff;
     font-size: 16px;
 }
+
+/* customizing range inputs */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+    /* margin: 18px 0; */
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+/* thumb styles */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #ffc600;
+    cursor: pointer;
+    margin-top: -5px;
+    box-shadow: 1px 1px 1px #000000,
+        0px 0px 1px #0d0d0d;
+}
+
+input[type="range"]::-moz-range-thumb {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border-style: none;
+    background: #ffc600;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000,
+        0px 0px 1px #0d0d0d;
+}
+
+/* track styling */
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #ffc600;
+    width: 100%;
+    height: 8px;
+    border: 1px solid rgba(1, 1, 1, 0);
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: goldenrod;
+}
+
+input[type="range"]::-moz-range-track {
+    background: #ffc600;
+    width: 100%;
+    height: 8px;
+    border: 1px solid rgba(1, 1, 1, 0);
+    cursor: pointer;
+    border-radius: 50px;
+}
