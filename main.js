@@ -13,4 +13,14 @@ function play() {
     }
 }
 
+function skip(e) {
+    const time = parseInt(e.target.dataset.skip);
+    video.currentTime += time;
+
+    if(video.currentTime === video.duration) {
+        playButton.textContent = '►';
+    }
+}
+
 playButton.addEventListener('click', play);
+skipButtons.forEach(button => button.addEventListener('click', skip))
