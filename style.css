@@ -60,7 +60,7 @@ body {
 
 .player__button {
     height: 100%;
-    flex-basis: 8%;
+    flex-basis: 6%;
     border-style: none;
     background: transparent;
     color: #fff;
@@ -68,10 +68,14 @@ body {
     outline: none;
 }
 
+.play {
+    flex-basis: 5%;
+}
+
 /* customizing range inputs */
 input[type="range"] {
     -webkit-appearance: none;
-    flex-basis: 32%;
+    flex-basis: 35%;
     background: transparent;
 }
 
