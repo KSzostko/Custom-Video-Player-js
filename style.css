@@ -15,12 +15,15 @@ body {
 }
 
 .player {
+    width: 640px;
+    height: 358px;
     position: relative;
+    overflow: hidden;
 }
 
 .player__controls {
     position: absolute;
-    bottom: 24px;
+    bottom: 16px;
     left: 0;
     right: 0;
     height: 30px;
@@ -28,6 +31,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    transform: translateY(140%);
+    transition: all .5s;
+}
+
+.player:hover .player__controls {
+    transform: translateY(0);
 }
 
 .player__play {
@@ -41,7 +50,7 @@ body {
     height: 10px;
     margin-bottom: 10px;
     display: flex;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .player__watched {
