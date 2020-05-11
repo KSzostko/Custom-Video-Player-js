@@ -31,7 +31,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    transform: translateY(140%);
+    transform: translateY(120%);
     transition: all .5s;
 }
 
