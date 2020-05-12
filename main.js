@@ -28,6 +28,11 @@ function updateBar() {
     watchedBar.style.flexBasis = `${videoPart}%`;
 }
 
+function handleChange(e) {
+    video[e.target.dataset.property] = e.target.value;
+}
+
 playButton.addEventListener('click', play);
-skipButtons.forEach(button => button.addEventListener('click', skip));
 video.addEventListener('timeupdate', updateBar);
+skipButtons.forEach(button => button.addEventListener('click', skip));
+inputs.forEach(input => input.addEventListener('input', handleChange));
