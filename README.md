@@ -6,3 +6,4 @@ Player Functionality:
 - time skipping buttons
 - skipping to any film scene with timeline bar
 - fullscreen mode
+Link: https://kszostko.github.io/Custom-Video-Player-js/
