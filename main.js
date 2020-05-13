@@ -59,7 +59,7 @@ function resizeVideo() {
             .catch(err => console.log('exitFullscreen failed', err));
     } else {
         icon.classList.replace('fa-expand', 'fa-compress');
-        
+
         videoPlayer.requestFullscreen()
             .catch(err => console.log('requestFullscreen failed', err));
     }
